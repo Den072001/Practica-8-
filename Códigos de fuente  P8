@@ -1,0 +1,156 @@
+Ejercicio 1
+// abrir librerias//
+#include <stdio.h>
+/* este programa te dice si un numero es positivo o negativo
+*/
+ 
+int main() {
+  int numero;
+// bloque de instrucciones //
+  printf("Escribe un numero: ");
+  scanf("%d", &numero);
+  if (numero>0)  printf("El numero es positivo.\n");
+  if (numero<=0) printf("El numero es cero o negativo.\n");
+ 
+  return 0;
+}
+
+
+Ejercicio 2
+//Abrir librerías //
+int main(){
+	 //Bloque de variables//
+	 //Variables enteras//
+	 
+	 int total, pagar;
+	 float cantidadDeLapices;
+	 
+	 
+	 /*
+	 Bloque de instrucciones
+	 */
+	 
+	 printf("Ingrese la cantidad de lapices:\n ");
+	 scanf("%f, &cantidadDeLapices");
+	 
+	if ( cantidadDeLapices >= 1000){
+		pagar = cantidadDeLapices * 0.85;
+	 
+}
+ 	else ( cantidadDeLapices < 1000);
+		pagar = cantidadDeLapices * 0.92;
+	
+total = pagar;	
+	printf("El total a pagar es %d.\n", total);	
+	
+	 
+	return 0;
+}
+
+
+
+Ejercicio 3
+//Abrir librerías//
+#include<stdio.h>
+/*
+Este programa determina el precio final que debe pagar una persona por comprar un traje y el descuento que obtendrá
+*/
+
+int main(){
+	//bloque de variables//
+	//variables reales//
+	
+	float descuento, precioFinal, precioPorTraje;
+	
+	printf("Ingrese el precio del traje:\n");
+	scanf("%f", &precioPorTraje);
+	
+	if (precioPorTraje > 25000)
+		descuento = precioPorTraje * 0.15;
+		
+	else 
+		descuento = precioPorTraje * 0.08;
+		
+	precioFinal = precioPorTraje - descuento;
+	printf("Valor de descuento: %g\n", descuento);
+	printf("Valor de precio final: %g\n", precioFinal);
+	
+	return 0;
+}
+
+
+
+Ejercicio 4 
+/* Programa: Número mayor de tres números introducidos */
+
+#include <conio.h>
+#include <stdio.h>
+
+int main()
+{
+    int n1, n2, n3;
+
+    printf( "\n   Introduzca el primer n%cmero (entero): ", 163 );
+    scanf( "%d", &n1 );
+    printf( "\n   Introduzca el segundo n%cmero (entero): ", 163 );
+    scanf( "%d", &n2 );
+    printf( "\n   Introduzca el tercer n%cmero (entero): ", 163 );
+    scanf( "%d", &n3 );
+
+    if ( n1 >= n2 && n1 >= n3 )
+        printf( "\n   %d es el mayor.", n1 );
+    else
+
+        if ( n2 > n3 )
+            printf( "\n   %d es el mayor.", n2 );
+        else
+            printf( "\n   %d es el mayor.", n3 );
+ 
+    getch(); /* Pausa */
+
+    return 0;
+}
+
+
+
+
+Ejercicio 5
+// abrir librerias //
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+    float costo_por_alumno, numero_de_alumnos, pago_por_el_servicio;
+    printf ("Ingrese el valor de numero de alumnos: ");
+    scanf ("%f", &numero_de_alumnos);
+    (void) getchar ();
+    costo_por_alumno=0;
+    pago_por_el_servicio=0;
+    if(numero_de_alumnos>=100)
+    {
+        costo_por_alumno=65;
+        pago_por_el_servicio=costo_por_alumno*numero_de_alumnos;
+    }
+    if(numero_de_alumnos>=50&&numero_de_alumnos<100)
+    {
+        costo_por_alumno=70;
+        pago_por_el_servicio=costo_por_alumno*numero_de_alumnos;
+    }
+    if(numero_de_alumnos>=30&&numero_de_alumnos<50)
+    {
+        costo_por_alumno=95;
+        pago_por_el_servicio=costo_por_alumno*numero_de_alumnos;
+    }
+    if(numero_de_alumnos>=30&&numero_de_alumnos<50)
+    {
+        pago_por_el_servicio=4000;
+        costo_por_alumno=pago_por_el_servicio/numero_de_alumnos;
+    }
+    printf ("Valor de costo por alumno: %g\n", costo_por_alumno);
+    printf ("Valor de pago por el servicio: %g\n", pago_por_el_servicio);
+    putchar ('\n');
+    system ("pause");
+    return EXIT_SUCCESS;
+}
+
